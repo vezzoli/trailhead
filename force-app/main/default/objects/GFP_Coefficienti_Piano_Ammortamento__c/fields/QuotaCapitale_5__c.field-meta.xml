@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>QuotaCapitale_5__c</fullName>
+    <description>Quota Capitale relativa all&#39;anno 5</description>
+    <externalId>false</externalId>
+    <label>QuotaCapitale_5</label>
+    <precision>17</precision>
+    <required>false</required>
+    <scale>16</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>GFP_COMMUNITY_LOGIN_LOCKED</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>GFP_COMMUNITY_LOGIN_LOCKED</shortDescription>
+        <value>Account bloccato a causa del numero eccessivo di tentativi di login falliti. Sarà possibile riprovare tra 15 minuti.</value>
+    </labels>
+</CustomLabels>

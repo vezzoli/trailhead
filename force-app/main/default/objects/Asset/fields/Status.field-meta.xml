@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status</fullName>
+    <picklist>
+        <picklistValues>
+            <fullName>Shipped</fullName>
+            <default>false</default>
+        </picklistValues>
+        <picklistValues>
+            <fullName>Installed</fullName>
+            <default>false</default>
+        </picklistValues>
+        <picklistValues>
+            <fullName>Registered</fullName>
+            <default>false</default>
+        </picklistValues>
+        <picklistValues>
+            <fullName>Obsolete</fullName>
+            <default>false</default>
+        </picklistValues>
+        <picklistValues>
+            <fullName>Purchased</fullName>
+            <default>false</default>
+        </picklistValues>
+        <sorted>false</sorted>
+    </picklist>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+</CustomField>

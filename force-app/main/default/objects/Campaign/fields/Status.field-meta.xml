@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status</fullName>
+    <picklist>
+        <picklistValues>
+            <fullName>Planned</fullName>
+            <default>true</default>
+        </picklistValues>
+        <picklistValues>
+            <fullName>In Progress</fullName>
+            <default>false</default>
+        </picklistValues>
+        <picklistValues>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </picklistValues>
+        <picklistValues>
+            <fullName>Aborted</fullName>
+            <default>false</default>
+        </picklistValues>
+        <sorted>false</sorted>
+    </picklist>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+</CustomField>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status</fullName>
+    <picklist>
+        <picklistValues>
+            <fullName>Planned</fullName>
+            <default>false</default>
+        </picklistValues>
+        <picklistValues>
+            <fullName>Received</fullName>
+            <default>false</default>
+        </picklistValues>
+        <picklistValues>
+            <fullName>Responded</fullName>
+            <default>false</default>
+        </picklistValues>
+        <picklistValues>
+            <fullName>Sent</fullName>
+            <default>false</default>
+        </picklistValues>
+        <sorted>true</sorted>
+    </picklist>
+    <type>Picklist</type>
+</CustomField>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Add_Employee_Record</name>
+        <label>Add Employee Record</label>
+        <locationX>371</locationX>
+        <locationY>178</locationY>
+        <actionName>BankService_addAccount__Service</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>UpdateUserRecord</targetReference>
+        </connector>
+        <inputParameters>
+            <name>accountName</name>
+            <value>
+                <elementReference>Name_on_Account</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>accountType</name>
+            <value>
+                <elementReference>Account_Type</elementReference>
+            </value>
+        </inputParameters>
+        <outputParameters>
+            <assignToReference>accountTypeField.Account_Type__c</assignToReference>
+            <name>accountDetails_type_201</name>
+        </outputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>UpdateUserRecord</name>
+        <label>UpdateUserRecord</label>
+        <locationX>373</locationX>
+        <locationY>296</locationY>
+        <actionName>BankService_updateAccount__Service</actionName>
+        <actionType>apex</actionType>
+        <inputParameters>
+            <name>accountName</name>
+            <value>
+                <elementReference>Name_on_Account</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>accountType</name>
+            <value>
+                <elementReference>Account_Type</elementReference>
+            </value>
+        </inputParameters>
+        <outputParameters>
+            <assignToReference>accountTypeField.Account_Type__c</assignToReference>
+            <name>accountDetails_type_200</name>
+        </outputParameters>
+    </actionCalls>
+    <interviewLabel>Employee Bank Record {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Employee Bank Record</label>
+    <processType>Flow</processType>
+    <screens>
+        <name>Account_Information</name>
+        <label>Account Information</label>
+        <locationX>371</locationX>
+        <locationY>60</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>Add_Employee_Record</targetReference>
+        </connector>
+        <fields>
+            <name>Name_on_Account</name>
+            <dataType>String</dataType>
+            <fieldText>Name on Account.</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <fields>
+            <name>Account_Type</name>
+            <dataType>String</dataType>
+            <fieldText>Account Type</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+    </screens>
+    <startElementReference>Account_Information</startElementReference>
+    <variables>
+        <name>accountTypeField</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+        <objectType>User</objectType>
+    </variables>
+</Flow>

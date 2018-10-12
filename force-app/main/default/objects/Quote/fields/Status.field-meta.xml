@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status</fullName>
+    <picklist>
+        <picklistValues>
+            <fullName>Draft</fullName>
+            <default>true</default>
+            <allowEmail>true</allowEmail>
+        </picklistValues>
+        <picklistValues>
+            <fullName>Needs Review</fullName>
+            <default>false</default>
+            <allowEmail>true</allowEmail>
+        </picklistValues>
+        <picklistValues>
+            <fullName>In Review</fullName>
+            <default>false</default>
+            <allowEmail>true</allowEmail>
+        </picklistValues>
+        <picklistValues>
+            <fullName>Approved</fullName>
+            <default>false</default>
+            <allowEmail>true</allowEmail>
+        </picklistValues>
+        <picklistValues>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+            <allowEmail>true</allowEmail>
+        </picklistValues>
+        <picklistValues>
+            <fullName>Presented</fullName>
+            <default>false</default>
+            <allowEmail>true</allowEmail>
+        </picklistValues>
+        <picklistValues>
+            <fullName>Accepted</fullName>
+            <default>false</default>
+            <allowEmail>true</allowEmail>
+        </picklistValues>
+        <picklistValues>
+            <fullName>Denied</fullName>
+            <default>false</default>
+            <allowEmail>true</allowEmail>
+        </picklistValues>
+        <sorted>false</sorted>
+    </picklist>
+    <type>Picklist</type>
+</CustomField>
