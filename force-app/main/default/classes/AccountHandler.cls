@@ -8,6 +8,7 @@ public class AccountHandler {
                 //   the required Name field is not provided.
                 Account acct = new Account(Name=nameAcc);
                 // Insert the account test locale sfdx
+                // Nuovo commento per testare i modificati
                 insert acct;
            		return acct;
             } catch (DmlException e) {
